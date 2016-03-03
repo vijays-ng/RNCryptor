@@ -398,7 +398,7 @@ public extension RNCryptor {
         private static let preambleSize = 1
         private static func canDecrypt(preamble: NSData) -> Bool {
             assert(preamble.length >= 1)
-            return preamble.bytesView[0] == 3
+            return preamble.bytesView[0] == 3 || preamble.bytesView[0] == 2 // The v3 decoder can decode our v2 messages if it believes in itself.
         }
 
         //
