@@ -2,13 +2,27 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/RNCryptor/RNCryptor/tree/swift)
+## [5.0.2](https://github.com/RNCryptor/RNCryptor/releases/tag/5.0.2)
 
+* Update Swift Package Manager support
+* Update Linux support
+* Add tvOS support
+* Update to Xcode 9.1 settings
+* Update to Swift 4 (no code changes; completely backward compatible)
+* Remove code coverage from Release builds (necessary for Carthage)
+
+## [5.0.1](https://github.com/RNCryptor/RNCryptor/releases/tag/5.0.1)
+
+* Perform final decryption after HMAC validation. Fixes #185. This improves security very slightly. There is no known or proposed attack that could exploit the previous behavior, but where possible it is better to validate prior to decryption.
+* Fix CocoaPods
+
+## [5.0.0](https://github.com/RNCryptor/RNCryptor/releases/tag/5.0.0) Swift 3.0. Drop ObjC bridge.
+
+* Rework for Swift 3
+* Drops ObjC bridging. There are too many problems with the Swift compiler at this point to support this cleanly. ObjC code should use [RNCryptor-ObjC](https://github.com/RNCryptor/RNCryptor-ObjC).
 * #159 Add WatchOS support to Podspec
 * Better debugging output in case of unexpected cryptor failure
 * Added Examples/KeyDerivation to explain how to manually derive keys
-* Marked `RNCryptor` class as `final`. Techincally this could be considered a breaking change if someone derived a subclass of `RNCryptor`, but that wouldn't make any sense. It's not a real class; it's just a namespace.
-* Marked internal `OverflowingBuffer` class as `final` (the compiler likely already did that anyway).
 
 ## [4.0.0](https://github.com/RNCryptor/RNCryptor/releases/tag/4.0.0) - Complete rewrite in Swift with ObjC bridging
 
