@@ -294,15 +294,10 @@
 				TargetAttributes = {
 					FB627FCD1B2B7A1700C3A579 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = J374TBL6J6;
-						DevelopmentTeamName = "Rob Napier";
-						LastSwiftMigration = 0910;
+						DevelopmentTeam = Q47KDWMY4F;
 					};
 					FB627FD71B2B7A1800C3A579 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = J374TBL6J6;
-						DevelopmentTeamName = "Rob Napier";
-						LastSwiftMigration = 0910;
 					};
 					FBCF48D31B43286D00DCFB19 = {
 						CreatedOnToolsVersion = 7.0;
@@ -466,7 +461,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -524,7 +519,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
